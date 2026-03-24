@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WebCraft AI</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Satoshi:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+
+  <!-- 🔗 Link to external CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ░░ CURSOR GLOW ░░ -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ░░ NOISE OVERLAY ░░ -->
+  <div class="noise"></div>
+
+  <!-- ░░ NAVIGATION ░░ -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-dot"></span>
+      WebCraft<em>AI</em>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#showcase">Showcase</a></li>
+    </ul>
+    <a href="#builder" class="nav-cta">Start Building →</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#features">Features</a>
+    <a href="#how">How It Works</a>
+    <a href="#showcase">Showcase</a>
+    <a href="#builder" class="mobile-cta">Start Building →</a>
+  </div>
+
+  <!-- ░░ HERO ░░ -->
+  <section class="hero" id="hero">
+    <div class="hero-tag" data-reveal>✦ AI-Powered Website Builder</div>
+    <h1 class="hero-title" data-reveal data-delay="0.1">
+      Build websites<br/>
+      <span class="gradient-text">that actually</span><br/>
+      <span class="outline-text">impress.</span>
+    </h1>
+    <p class="hero-sub" data-reveal data-delay="0.2">
+      Describe your idea in plain English. WebCraft AI generates a complete,
+      beautiful, production-ready website in under 60 seconds.
+    </p>
+    <div class="hero-actions" data-reveal data-delay="0.3">
+      <a href="#builder" class="btn-primary">Generate My Site</a>
+      <a href="#showcase" class="btn-ghost">See Examples ↓</a>
+    </div>
+    <div class="hero-stats" data-reveal data-delay="0.4">
+      <div class="stat"><strong>12k+</strong><span>Sites built</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><strong>&lt;60s</strong><span>Generation time</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><strong>100%</strong><span>Responsive</span></div>
+    </div>
+  </section>
+
+  <!-- ░░ MARQUEE ░░ -->
+  <div class="marquee-wrap">
+    <div class="marquee-track" id="marqueeTrack">
+      <span>Portfolio</span><span class="dot">·</span>
+      <span>E-commerce</span><span class="dot">·</span>
+      <span>Restaurant</span><span class="dot">·</span>
+      <span>Blog</span><span class="dot">·</span>
+      <span>Landing Page</span><span class="dot">·</span>
+      <span>Agency</span><span class="dot">·</span>
+      <span>Resume</span><span class="dot">·</span>
+      <span>SaaS</span><span class="dot">·</span>
+      <span>Nonprofit</span><span class="dot">·</span>
+      <span>Photography</span><span class="dot">·</span>
+      <!-- Duplicated for seamless loop -->
+      <span>Portfolio</span><span class="dot">·</span>
+      <span>E-commerce</span><span class="dot">·</span>
+      <span>Restaurant</span><span class="dot">·</span>
+      <span>Blog</span><span class="dot">·</span>
+      <span>Landing Page</span><span class="dot">·</span>
+      <span>Agency</span><span class="dot">·</span>
+      <span>Resume</span><span class="dot">·</span>
+      <span>SaaS</span><span class="dot">·</span>
+      <span>Nonprofit</span><span class="dot">·</span>
+      <span>Photography</span><span class="dot">·</span>
+    </div>
+  </div>
+
+  <!-- ░░ FEATURES ░░ -->
+  <section class="features" id="features">
+    <div class="section-header">
+      <div class="section-tag" data-reveal>What makes it different</div>
+      <h2 class="section-title" data-reveal data-delay="0.1">Everything you need.<br/>Nothing you don't.</h2>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card" data-reveal data-delay="0.1">
+        <div class="feature-icon">⚡</div>
+        <h3>Instant Generation</h3>
+        <p>Full HTML, CSS, and JavaScript generated from a single description. No templates, no restrictions.</p>
+        <div class="feature-line"></div>
+      </div>
+      <div class="feature-card featured" data-reveal data-delay="0.2">
+        <div class="feature-icon">🎨</div>
+        <h3>Design-Aware AI</h3>
+        <p>Not just functional — genuinely beautiful. The AI understands color theory, typography, and layout principles.</p>
+        <div class="feature-line"></div>
+      </div>
+      <div class="feature-card" data-reveal data-delay="0.3">
+        <div class="feature-icon">📱</div>
+        <h3>Mobile First</h3>
+        <p>Every site includes a working hamburger nav, responsive grid, and fluid typography out of the box.</p>
+        <div class="feature-line"></div>
+      </div>
+      <div class="feature-card" data-reveal data-delay="0.4">
+        <div class="feature-icon">✏️</div>
+        <h3>Tweak Anything</h3>
+        <p>Not happy with a section? Type a change in plain English and watch it update in real time.</p>
+        <div class="feature-line"></div>
+      </div>
+      <div class="feature-card" data-reveal data-delay="0.5">
+        <div class="feature-icon">📦</div>
+        <h3>One-File Download</h3>
+        <p>Download a single self-contained HTML file. No dependencies, no build step, no hosting complexity.</p>
+        <div class="feature-line"></div>
+      </div>
+      <div class="feature-card" data-reveal data-delay="0.6">
+        <div class="feature-icon">🔒</div>
+        <h3>Your Code, Always</h3>
+        <p>You own the output entirely. Clean, readable code you can open in any editor and modify freely.</p>
+        <div class="feature-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ HOW IT WORKS ░░ -->
+  <section class="how" id="how">
+    <div class="section-header">
+      <div class="section-tag" data-reveal>Simple by design</div>
+      <h2 class="section-title" data-reveal data-delay="0.1">Three steps.<br/>One great website.</h2>
+    </div>
+    <div class="steps">
+      <div class="step" data-reveal data-delay="0.1">
+        <div class="step-num">01</div>
+        <div class="step-content">
+          <h3>Describe your site</h3>
+          <p>Tell us your name, what you do, and what pages you need. The more detail, the better the result.</p>
+        </div>
+      </div>
+      <div class="step-connector" data-reveal data-delay="0.2"></div>
+      <div class="step" data-reveal data-delay="0.3">
+        <div class="step-num">02</div>
+        <div class="step-content">
+          <h3>Pick your style</h3>
+          <p>Choose a color palette and vibe. Opt-in to features like contact forms, FAQs, or dark mode toggles.</p>
+        </div>
+      </div>
+      <div class="step-connector" data-reveal data-delay="0.4"></div>
+      <div class="step" data-reveal data-delay="0.5">
+        <div class="step-num">03</div>
+        <div class="step-content">
+          <h3>Generate & download</h3>
+          <p>Get a complete, polished website in seconds. Preview, tweak, then download or deploy instantly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ SHOWCASE ░░ -->
+  <section class="showcase" id="showcase">
+    <div class="section-header">
+      <div class="section-tag" data-reveal>Real results</div>
+      <h2 class="section-title" data-reveal data-delay="0.1">Sites built with<br/>WebCraft AI</h2>
+    </div>
+    <div class="showcase-grid">
+      <div class="showcase-card" data-reveal data-delay="0.1" style="--card-hue: 260;">
+        <div class="showcase-preview">
+          <div class="mock-nav"></div>
+          <div class="mock-hero"></div>
+          <div class="mock-cards"><div></div><div></div><div></div></div>
+        </div>
+        <div class="showcase-info">
+          <span class="showcase-type">Portfolio</span>
+          <h4>Alex Rivera — Photography</h4>
+        </div>
+      </div>
+      <div class="showcase-card tall" data-reveal data-delay="0.2" style="--card-hue: 160;">
+        <div class="showcase-preview">
+          <div class="mock-nav"></div>
+          <div class="mock-hero"></div>
+          <div class="mock-cards"><div></div><div></div></div>
+        </div>
+        <div class="showcase-info">
+          <span class="showcase-type">Restaurant</span>
+          <h4>Bloom Kitchen & Bar</h4>
+        </div>
+      </div>
+      <div class="showcase-card" data-reveal data-delay="0.3" style="--card-hue: 30;">
+        <div class="showcase-preview">
+          <div class="mock-nav"></div>
+          <div class="mock-hero"></div>
+          <div class="mock-cards"><div></div><div></div><div></div></div>
+        </div>
+        <div class="showcase-info">
+          <span class="showcase-type">SaaS</span>
+          <h4>Nexus Analytics Platform</h4>
+        </div>
+      </div>
+      <div class="showcase-card" data-reveal data-delay="0.4" style="--card-hue: 340;">
+        <div class="showcase-preview">
+          <div class="mock-nav"></div>
+          <div class="mock-hero"></div>
+          <div class="mock-cards"><div></div><div></div></div>
+        </div>
+        <div class="showcase-info">
+          <span class="showcase-type">Agency</span>
+          <h4>Forma Creative Studio</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ BUILDER CTA ░░ -->
+  <section class="builder-cta" id="builder">
+    <div class="cta-glow"></div>
+    <div class="section-tag" data-reveal>Ready to start?</div>
+    <h2 class="cta-title" data-reveal data-delay="0.1">Your website is<br/><span class="gradient-text">one prompt away.</span></h2>
+    <p class="cta-sub" data-reveal data-delay="0.2">No account needed. No credit card. Just describe what you want.</p>
+    <div class="cta-input-wrap" data-reveal data-delay="0.3">
+      <input
+        type="text"
+        class="cta-input"
+        id="ctaInput"
+        placeholder="e.g. A photography portfolio for weddings and portraits..."
+        maxlength="200"
+      />
+      <button class="cta-btn" id="ctaBtn">Generate →</button>
+    </div>
+    <div class="cta-tags" data-reveal data-delay="0.4">
+      <button class="cta-tag" data-prompt="A modern portfolio for a freelance UI/UX designer">UI/UX Designer</button>
+      <button class="cta-tag" data-prompt="A cozy Italian restaurant website with a menu and reservations">Italian Restaurant</button>
+      <button class="cta-tag" data-prompt="A landing page for a productivity SaaS startup">SaaS Startup</button>
+      <button class="cta-tag" data-prompt="A personal resume site for a software engineer">Dev Resume</button>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer>
+    <div class="footer-logo">WebCraft<em>AI</em></div>
+    <p class="footer-copy">© 2025 WebCraft AI · Built with Claude · All rights reserved</p>
+  </footer>
+
+  <!-- 🔗 Link to external JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
